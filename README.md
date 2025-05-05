@@ -17,17 +17,17 @@ Desarrollar controladores funcionales en Arduino para resolver problemas especí
 
 ## 📁 Estructura del repositorio
 controladores-arduino/
-├── Algoritmo1.ino # Controlador PID tipo 1
-├── Algoritmo2.ino # Controlador PID tipo 2
-├── Algoritmo4 # Polinomial Generalizado sin acción integral
-├── Algoritmo5.ino # Polinomial Generalizado con ganancia en lazo directo
-├── README.md # Controladores diseñados para un levitador neumático
+- Algoritmo1.ino # Controlador PID tipo 1
+- Algoritmo2.ino # Controlador PID tipo 2
+- Algoritmo4 # Polinomial Generalizado sin acción integral
+- Algoritmo5.ino # Polinomial Generalizado con ganancia en lazo directo
+- README.md # Controladores diseñados para un levitador neumático
 
 
 
 ## 🔗 Autor
 
-- **Juan Carlos Aguirre y Mattew Ocampo Herrera
+- Juan Carlos Aguirre y Mattew Ocampo Herrera
 - Ingeniería Mecatrónica   
 - Universidad Tecnológica de Pereira
 
