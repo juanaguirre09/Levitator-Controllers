@@ -6,7 +6,7 @@ Este repositorio contiene el desarrollo de un proyecto realizado como parte del 
 
 ## 📌 Objetivo del proyecto
 
-Desarrollar controladores funcionales en Arduino para resolver problemas específicos de automatización y control, haciendo uso de sensores, actuadores y técnicas de programación estructurada.
+Desarrolar controladores para un sistema de levitación neumática usando Arduino y Labview. 
 
 ## ⚙️ Tecnologías utilizadas
 
@@ -14,6 +14,7 @@ Desarrollar controladores funcionales en Arduino para resolver problemas especí
 - Lenguaje C++ (Arduino IDE)
 - Sensores: Sensor de proximidad
 - Actuadores: Motor 12 VDC
+- Labview
 
 ## 📁 Estructura del repositorio
 controladores-arduino/
