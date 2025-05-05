@@ -21,6 +21,8 @@ controladores-arduino/
 - Algoritmo2.ino # Controlador PID tipo 2
 - Algoritmo4.ino # Polinomial Generalizado sin acción integral
 - Algoritmo5.ino # Polinomial Generalizado con ganancia en lazo directo
+controladores-Labview/
+- Algoritmo_3.vi # Polinomial generalizado con acción integral 
 - README.md # Controladores diseñados para un levitador neumático
 
 
