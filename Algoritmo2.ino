@@ -1,7 +1,7 @@
 #include <BasicLinearAlgebra.h>
 using namespace BLA;
 
-// MAtricez
+// Matrices
 Matrix<4,1> TETA;
 Matrix<4,1> PHI, X3;
 Matrix<1,1> X1;
@@ -16,7 +16,7 @@ float e=0, e1=0, e2=0, e3=0;
 float pol=0.9, pol1=0, pol2=0, pol3=0, pol4=0;//0.3
 float c0=1, c1=1, c2=1, c3=0;
 
-// pines
+// Pines
 const int trig = 8;
 const int echo = 9;
 const int pwm = 10;
