@@ -24,7 +24,11 @@ controladores-arduino/
 - Algoritmo5.ino # Polinomial Generalizado con ganancia en lazo directo
   
 controladores-Labview/
-- Algoritmo_3.vi # Polinomial generalizado con acción integral 
+- Algoritmo_3.vi # Polinomial generalizado con acción integral
+- Algoritmo_6.vi # Espacio de estados reducido con ganancia en lazo directo
+- Algoritmo_7.vi # Espacio de estados reducido con acción integral
+- Algoritmo_8.vi # Espacio de estados extendido con ganancia en lazo directo
+- Algoritmo_9.vi # Espacio de estados extendido con acción integral
 - README.md # Controladores diseñados para un levitador neumático
 
 
