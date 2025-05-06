@@ -1,7 +1,7 @@
 #include <BasicLinearAlgebra.h>
 using namespace BLA;
 
-// MAtricez
+// Matrices
 Matrix<6,1> TETA;
 Matrix<6,1> PHI, X3;
 Matrix<1,1> X1;
