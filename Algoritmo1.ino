@@ -1,7 +1,7 @@
 #include <BasicLinearAlgebra.h>
 using namespace BLA;
 //Si oscila mucho bajar el polo por pasos de 0.01
-// MAtricez de Estimacion
+// Matrices de Estimacion
 Matrix<2,1> TETA;
 Matrix<2,1> PHI, X3;
 Matrix<1,1> X1;
