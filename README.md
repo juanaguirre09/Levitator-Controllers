@@ -1,8 +1,10 @@
 # Levitator-Controllers
-Controllers of the following types: Type 1, Type 2 generalized polynomial, and state-space for a pneumatic levitator.
-# Controladores en Arduino
 
-Este repositorio contiene el desarrollo de un proyecto realizado como parte del curso de CONTROL IV, el cual consistió en la implementación de diferentes controladores utilizando Arduino. Se incluyen los códigos fuente.
+Controllers of the following types: Type 1, Type 2 generalized polynomial, and state-space for a pneumatic levitator.
+
+# Controladores en Arduino y Labview
+
+Este repositorio contiene el desarrollo de un proyecto realizado como parte del curso de SISTEMAS DE CONTROL IV, el cual consistió en la implementación de diferentes controladores utilizando Arduino, programando el microcontrolador en Arduino IDE y en el entorno gráfico de Labview. Se incluyen los códigos fuente.
 
 ## 📌 Objetivo del proyecto
 
