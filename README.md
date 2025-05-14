@@ -33,7 +33,8 @@ controladores-Labview/
 - Algoritmo_9.vi # Espacio de estados extendido con acción integral
 - README.md # Controladores diseñados para un levitador neumático
 
-
+## Video demostrativo
+[Haz clic aquí para ver el video](https://youtu.be/dqrvql4zS70?si=Z20IAbmv8brBYKhx)
 
 ## 🔗 Autores
 
