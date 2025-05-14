@@ -35,9 +35,9 @@ controladores-Labview/
 
 
 
-## 🔗 Autor
+## 🔗 Autores
 
-- Juan Carlos Aguirre y Mattew Ocampo Herrera
+- Juan Carlos Aguirre y Matthew Ocampo Herrera
 - Ingeniería Mecatrónica   
 - Universidad Tecnológica de Pereira
 
