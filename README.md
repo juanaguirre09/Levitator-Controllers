@@ -1,6 +1,6 @@
 # Levitator-Controllers
 
-Controllers of the following types: Type 1, Type 2 generalized polynomial, and state-space for a pneumatic levitator.
+Controllers of the following types: Type 1, Type 2 generalized polynomial, state-space for a pneumatic levitator, fuzzy logic and neuronal networks.
 
 # Controladores en Arduino y Labview
 
@@ -24,6 +24,9 @@ controladores-arduino/
 - Algoritmo2.ino # Controlador PID tipo 2
 - Algoritmo4.ino # Polinomial Generalizado sin acción integral
 - Algoritmo5.ino # Polinomial Generalizado con ganancia en lazo directo
+- 1Entrada_9Reglas.ino #Lógica difusa con una entrada y 9 reglas
+- 2Entradas_9Reglas.ino #Lógica difusa con dos entradas y 9 reglas
+- 2Entradas_25Reglas.ino #Lógica difusa con dos entradas y 25 reglas
   
 controladores-Labview/
 - Algoritmo_3.vi # Polinomial generalizado con acción integral
