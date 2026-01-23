@@ -45,6 +45,89 @@ Two development environments were used:
 
 ## Repository Structure
 
+## PID Type 1 (Arduino) — Design & Implementation
+
+This section summarizes the development of the **Type 1 PID controller** implemented in `Algoritmo1.ino`.  
+The design follows a **discrete-time pole placement approach** using an **online estimated plant model**.
+
+### 1) Estimated plant model (1st order)
+
+The levitator is approximated by a first-order discrete transfer function:
+
+\[
+H(z)=\frac{b_0}{z+a_1}
+\]
+
+The parameters \(a_1\) and \(b_0\) are updated online using a hybrid estimator (Orthogonal Projection / Recursive Least Squares), depending on the estimation error.  
+(See "Construcción Estimadores" in the report.)  
+
+### 2) Controller structure (Type 1 PID)
+
+The controller is defined as:
+
+\[
+C(z)=\frac{C_0 z^2 + C_1 z + C_2}{z(z-1)}
+\]
+
+### 3) Pole placement
+
+The closed-loop characteristic polynomial is:
+
+\[
+P_o = 1 + H(z)\,C(z)
+\]
+
+We choose a desired polynomial:
+
+\[
+P_d = (z+\alpha)^3 = z^3 + 3\alpha z^2 + 3\alpha^2 z + \alpha^3
+\]
+
+By matching coefficients, the controller parameters are computed using a linear system:
+
+\[
+\begin{bmatrix}C_0\\C_1\\C_2\end{bmatrix}
+=
+\begin{bmatrix}
+b_0&0&0\\
+0&b_0&0\\
+0&0&b_0
+\end{bmatrix}^{-1}
+\begin{bmatrix}
+3\alpha + 1 - a_1\\
+3\alpha^2 + a_1\\
+\alpha^3
+\end{bmatrix}
+\]
+
+Where \(\alpha\in(0,1)\) is chosen experimentally to balance speed and stability.
+
+### 4) Discrete control law (difference equation)
+
+Finally, the control signal is implemented as:
+
+\[
+u[k] = -u[k-1] + C_0 e[k] + C_1 e[k-1] + C_2 e[k-2]
+\]
+
+with \(e[k]=r[k]-y[k]\).
+
+### 5) Practical implementation notes
+
+- **Sampling time** used in experiments: typically **100 ms** for the PID controllers.
+- The project uses `BasicLinearAlgebra.h` to compute matrix operations and solve the controller equations in real time.
+- The Arduino Serial interface is used to adjust **reference (setpoint)** and controller mode during tests.
+
+---
+
+### Suggested figures to add
+
+- **Block diagram** of the closed-loop system (plant + controller)
+- **Serial Plotter response** (reference vs output vs error)
+- **Photo of the levitator setup**
+- **Transfer function / pole placement equations** (optional screenshot from the report)
+
+
 ### `controladores-arduino/`
 Arduino-based controller implementations:
 
