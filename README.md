@@ -81,8 +81,14 @@ following difference equation:
 
 ![Difference equation](docs/images/formulas/pid_type1_difference_equation.png)
 
-This equation is implemented directly on the Arduino and executed at a
-fixed sampling time.
+### Experimental response (Arduino Serial Plotter)
+
+The following figure shows the real-time response of the pneumatic
+levitator under the Type 1 PID controller. The plot includes the
+reference signal (setpoint), the measured position, and the estimated
+output.
+
+![PID Type 1 response](docs/images/pid_type1_serial_plotter_response.png)
 
 ---
 
