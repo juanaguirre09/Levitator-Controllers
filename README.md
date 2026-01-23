@@ -42,8 +42,7 @@ Two development environments were used:
 - **Control techniques:** PID, polynomial control, state-space, fuzzy logic, neural networks
 
 ---
-
-## Repository Structure
+---
 
 ## PID Type 1 Controller — Design and Implementation (Arduino)
 
@@ -71,7 +70,7 @@ discrete transfer function:
 ### Pole placement approach
 
 The controller gains are obtained using a pole placement method.
-A desired closed-loop polynomial of the form \( (z + α)^3 \) is selected,
+A desired closed-loop polynomial of the form (z + α)³ is selected,
 where the parameter α is tuned experimentally to balance stability and
 response speed.
 
@@ -84,9 +83,13 @@ following difference equation:
 
 This equation is implemented directly on the Arduino and executed at a
 fixed sampling time.
-**Photo of the levitator setup**
-- **Transfer function / pole placement equations** (optional screenshot from the report)
 
+---
+
+## Repository Structure
+
+
+## Repository Structure
 
 ### `controladores-arduino/`
 Arduino-based controller implementations:
