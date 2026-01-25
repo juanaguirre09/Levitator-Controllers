@@ -90,9 +90,27 @@ output.
 
 ![PID Type 1 response](docs/images/pid_type1_serial_plotter_response.png)
 
----
+## PID Type 2 Controller — Design and Implementation (Arduino)
 
-## Repository Structure
+This section presents the implementation of the **Type 2 PID controller**
+developed in `Algoritmo2.ino`.
+
+Compared to the Type 1 controller, the Type 2 PID includes an additional
+integral action, which improves steady-state accuracy and disturbance
+rejection.
+
+### PID Type 2 controller structure
+
+The controller is defined by the following discrete transfer function:
+
+![PID Type 2 structure](docs/images/formulas/pid_type2_controller_structure.png)
+
+### Discrete control law
+
+The control signal is computed using the following difference equation,
+which is executed in real time on the Arduino:
+
+![PID Type 2 difference equation](docs/images/formulas/pid_type2_difference_equation.png)
 
 
 ## Repository Structure
