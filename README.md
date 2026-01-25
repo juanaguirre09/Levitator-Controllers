@@ -112,6 +112,63 @@ which is executed in real time on the Arduino:
 
 ![PID Type 2 difference equation](docs/images/formulas/pid_type2_difference_equation.png)
 
+---
+
+## Neural Network Controller — Design and Implementation (LabVIEW)
+
+This section presents the implementation of an **inverse neural network
+controller** for the pneumatic levitation system, developed using
+**LabVIEW** and described in the project report.
+
+This approach explores the use of data-driven techniques to control a
+nonlinear system without relying on an explicit analytical model.
+
+### Inverse neural network concept
+
+The neural network is designed to act as an **inverse model of the
+plant**. Instead of computing the system output from a control input,
+the network estimates the **control action required** to achieve a
+desired position.
+
+The controller generates the actuator command based on the reference
+signal and the measured system response.
+
+### Neural network structure
+
+A **feedforward neural network** is used, composed of:
+- Input variables related to the reference and system behavior
+- One hidden layer with nonlinear activation functions
+- An output layer providing the control signal
+
+The network is trained offline using experimental input–output data
+obtained from the pneumatic levitator.
+
+### LabVIEW implementation
+
+The trained neural network is integrated into LabVIEW and executed in
+real time within a closed-loop control structure.
+
+**Front panel view:**
+
+![Inverse NN front panel](docs/images/red_neuronal_inversa_control.png)
+
+**Block diagram implementation:**
+
+![Inverse NN block diagram](docs/images/red_neuronal_inversa.png)
+
+During operation, the measured position is acquired by the sensor, the
+neural network computes the required control action, and the result is
+applied to the actuator.
+
+### Experimental observations
+
+The inverse neural network controller is capable of stabilizing the
+levitation system and tracking the reference signal. The results show
+that neural networks can be an effective alternative for controlling
+nonlinear systems, although their performance strongly depends on the
+quality of the training data.
+
+
 
 ## Repository Structure
 
