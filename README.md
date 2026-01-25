@@ -168,6 +168,12 @@ that neural networks can be an effective alternative for controlling
 nonlinear systems, although their performance strongly depends on the
 quality of the training data.
 
+### Pneumatic levitator setup
+
+The following image shows the real pneumatic levitation system used for
+experimental validation of the control strategies.
+
+![Pneumatic levitator setup](docs/images/planta_levitador.png)
 
 
 ## Repository Structure
