@@ -1,5 +1,11 @@
 # Levitator Controllers
 
+<p align="left">
+  <a href="https://www.youtube.com/watch?v=dqrvql4zS70" target="_blank">
+    <img src="https://img.shields.io/badge/Watch%20Project%20Video-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch Project Video">
+  </a>
+</p>
+
 This repository presents the implementation of several control strategies for a **pneumatic levitation system**, developed as part of the course **Control Systems IV**.
 
 The project focuses on the design, implementation, and comparison of classical and advanced controllers using both **Arduino** and **LabVIEW**, combining embedded programming and graphical control design.
