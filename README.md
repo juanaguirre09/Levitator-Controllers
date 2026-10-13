@@ -209,12 +209,6 @@ LabVIEW-based controller implementations:
 
 ---
 
-## Demonstration Video
-
-Watch the system in operation:  
-[Click here to watch the video](https://youtu.be/dqrvql4zS70?si=Z20IAbmv8brBYKhx)
-
----
 
 ## Authors
 
